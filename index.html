@@ -3,10 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NWDC 2</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>LinkTree</title>
+    <script>
+      function copyEmail() {
+        const email = "blablabla@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+          alert("Email copied to clipboard: " + email);
+        });
+      }
+    </script>
   </head>
   <body>
-    <h1>Konnichiwa sekai</h1>
+    <div class="container">
+      <!-- FOTO PROFIL -->
+      <img src="img/image.png" class="profile-image" alt="Foto Profil" />
+      <h1>Surya Atmaja</h1>
+      <p>Web Developer | React & Next.js | Suka Mancing</p>
+      <div class="box">
+        <a class="link-btn" href="https://instagram.com/" target="_blank">
+          Instagram
+        </a>
+        <a class="link-btn" href="https://x.com/" target="_blank">
+          X (Twitter)
+        </a>
+        <a class="link-btn" href="https://linkedin.com/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+      <p class="contact" onclick="copyEmail()">
+        Contact me at: blabla@gmail.com
+      </p>
+    </div>
   </body>
 </html>
